@@ -1,0 +1,520 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axis Colleges — Top Engineering & Professional Colleges in Kanpur</title>
+    <meta name="description" content="Axis Colleges offers industry-focused programs in engineering, management, design, pharmacy and arts. Apply online for 2025–26. Virtual tour, placement support & scholarships available.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollegeOrUniversity",
+      "name": "Axis Colleges",
+      "url": "https://axiscolleges.org/",
+      "logo": "C:\Users\Asus\Downloads\axislogo-1.png",
+      "sameAs": [
+        "https://www.facebook.com/axiscolleges",
+        "https://x.com/axiscolleges",
+        "https://www.youtube.com/channel/UC-7QjYI3sYf8tS25fL5BawQ",
+        "https://www.instagram.com/axiscolleges",
+        "https://www.linkedin.com/school/axis-colleges"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Hathipur, Rooma",
+        "addressLocality": "Kanpur",
+        "addressRegion": "Uttar Pradesh",
+        "postalCode": "208001",
+        "addressCountry": "IN"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91-7897993333",
+        "contactType": "customer service"
+      }
+    }
+    </script>
+    
+    <style>
+        :root {
+            --background: #ffffff;
+            --foreground: #020817;
+            --card: #ffffff;
+            --card-foreground: #020817;
+            --primary: #1e40af;
+            --primary-foreground: #f8fafc;
+            --secondary: #f1f5f9;
+            --muted: #f1f5f9;
+            --muted-foreground: #64748b;
+            --border: #e2e8f0;
+            --font-sans: 'Inter', sans-serif;
+            --font-serif: 'Playfair Display', serif;
+        }
+
+        .dark {
+            --background: #020817;
+            --foreground: #f8fafc;
+            --card: #0f172a;
+            --card-foreground: #f8fafc;
+            --primary: #60a5fa;
+            --primary-foreground: #020817;
+            --secondary: #1e293b;
+            --muted: #1e293b;
+            --muted-foreground: #94a3b8;
+            --border: #1e293b;
+        }
+
+        body { font-family: var(--font-sans); background-color: var(--background); color: var(--foreground); transition: background-color 0.3s, color 0.3s; }
+        h1, h2, h3, h4, h5, h6 { font-family: var(--font-serif); }
+        .bg-card { background-color: var(--card); }
+        .text-card-foreground { color: var(--card-foreground); }
+        .bg-primary { background-color: var(--primary); }
+        .text-primary-foreground { color: var(--primary-foreground); }
+        .bg-secondary { background-color: var(--secondary); }
+        .border-custom { border-color: var(--border); }
+        .text-primary { color: var(--primary); }
+        .text-muted-foreground { color: var(--muted-foreground); }
+        
+        .nav-link { position: relative; }
+        .nav-link::after { content: ''; position: absolute; width: 100%; transform: scaleX(0); height: 2px; bottom: -4px; left: 0; background-color: var(--primary); transform-origin: bottom right; transition: transform 0.25s ease-out; }
+        .nav-link:hover::after { transform: scaleX(1); transform-origin: bottom left; }
+
+        .btn-gradient {
+            background-image: linear-gradient(45deg, #1e40af, #3b82f6);
+            background-size: 200% auto; transition: background-position 0.4s ease-in-out;
+        }
+        .btn-gradient:hover { background-position: right center; }
+
+        .ripple-btn { position: relative; overflow: hidden; }
+        .ripple {
+            position: absolute; border-radius: 50%; background: rgba(255, 255, 255, 0.5);
+            transform: scale(0); animation: ripple-effect 0.6s linear;
+        }
+        @keyframes ripple-effect { to { transform: scale(4); opacity: 0; } }
+
+        .card-hover { transition: transform 0.3s ease-out, box-shadow 0.3s ease-out; }
+        .card-hover:hover { transform: translateY(-8px); box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1); }
+        .dark .card-hover:hover { box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); }
+
+        #hero-carousel .carousel-slide { display: none; background-size: cover; background-position: center; }
+        #hero-carousel .carousel-slide.active { display: block; }
+        .hero-overlay { background: linear-gradient(180deg, rgba(2, 8, 23, 0.2) 0%, rgba(2, 8, 23, 0.7) 100%); }
+        .hero-text-content { opacity: 0; }
+        .hero-text-animate { animation: hero-text-fade-in 0.8s 0.2s ease-out forwards; }
+        @keyframes hero-text-fade-in {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .scroll-animate { opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+        .scroll-animate.in-view { opacity: 1; transform: translateY(0); }
+        
+        .carousel-container { display: flex; transition: transform 0.5s ease-in-out; }
+        .carousel-item { flex: 0 0 100%; }
+        @media (min-width: 1024px) { .carousel-item { flex: 0 0 33.3333%; } }
+    </style>
+</head>
+<body class="bg-secondary">
+
+    <button id="darkModeToggle" aria-label="Toggle dark mode" class="fixed top-4 right-4 z-50 p-2 rounded-full bg-card border border-custom shadow-md hover:bg-muted transition">
+        <i data-lucide="sun" class="block dark:hidden"></i>
+        <i data-lucide="moon" class="hidden dark:block"></i>
+    </button>
+
+    <header class="bg-card/80 backdrop-blur-sm sticky top-0 z-40 border-b border-custom shadow-sm">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#" aria-label="Axis Colleges Homepage">
+                <img src="https://i.ibb.co/3s4jQ3s/axislogo-1.png" alt="Axis Colleges Logo" class="h-12">
+            </a>
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="#home" class="nav-link text-muted-foreground hover:text-card-foreground">Home</a>
+                <a href="#about" class="nav-link text-muted-foreground hover:text-card-foreground">About</a>
+                <a href="#courses" class="nav-link text-muted-foreground hover:text-card-foreground">Courses</a>
+                <a href="#placements" class="nav-link text-muted-foreground hover:text-card-foreground">Placements</a>
+                <a href="#contact" class="nav-link text-muted-foreground hover:text-card-foreground">Contact</a>
+            </div>
+            <button id="mobileMenuBtn" class="lg:hidden p-2" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+                <i data-lucide="menu"></i>
+            </button>
+        </nav>
+        <div id="mobileMenu" class="hidden lg:hidden bg-card border-t border-custom p-4 space-y-2">
+             <a href="#home" class="block py-2">Home</a>
+             <a href="#about" class="block py-2">About</a>
+             <a href="#courses" class="block py-2">Courses</a>
+             <a href="#placements" class="block py-2">Placements</a>
+             <a href="#contact" class="block py-2">Contact</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6">
+        <section id="home" class="relative rounded-lg my-8 h-[70vh] md:h-[80vh] overflow-hidden">
+            <div id="hero-carousel" class="w-full h-full">
+                <div class="carousel-slide active h-full" style="background-image: url('https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=2070&auto=format&fit=crop');" role="img" aria-label="View of the modern Axis Colleges campus building"></div>
+                <div class="carousel-slide h-full" style="background-image: url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2070&auto=format&fit=crop');" role="img" aria-label="Students collaborating on a project in a bright classroom"></div>
+                <div class="carousel-slide h-full" style="background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop');" role="img" aria-label="State-of-the-art computer lab at Axis Colleges"></div>
+            </div>
+            <div class="hero-overlay absolute inset-0 flex items-center justify-center text-center">
+                <div class="hero-text-content text-white p-8 md:p-12">
+                    <h1 id="hero-headline" class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">Axis Colleges — Where Ambition Meets Opportunity</h1>
+                    <p id="hero-subheadline" class="text-lg md:text-xl text-gray-200 max-w-4xl mx-auto mb-8">A multidisciplinary group of colleges in Kanpur delivering industry-ready education in engineering, design, pharmacy, management and the arts.</p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="#admissions" class="px-8 py-3 bg-primary text-primary-foreground font-semibold rounded-lg shadow-md ripple-btn btn-gradient">Apply for Admission 2025–26</a>
+                    </div>
+                </div>
+            </div>
+            <button id="hero-prev" aria-label="Previous slide" class="absolute top-1/2 left-4 -translate-y-1/2 p-1.5 rounded-full bg-white/20 hover:bg-white/40 text-white"><i data-lucide="chevron-left" class="w-5 h-5"></i></button>
+            <button id="hero-next" aria-label="Next slide" class="absolute top-1/2 right-4 -translate-y-1/2 p-1.5 rounded-full bg-white/20 hover:bg-white/40 text-white"><i data-lucide="chevron-right" class="w-5 h-5"></i></button>
+            <div id="hero-dots" class="absolute bottom-6 left-1/2 -translate-x-1/2 flex space-x-2"></div>
+        </section>
+
+        <section id="about" class="my-16 scroll-animate">
+            <div class="text-center">
+                <h2 class="text-4xl font-bold mb-4">A Hub of Excellence in Kanpur</h2>
+                <p class="text-muted-foreground max-w-3xl mx-auto">Established in 2010, Axis Colleges is a leading group of institutions focused on quality education, applied research, and holistic student development. Approved by AICTE, COA, & PCI, and affiliated with AKTU, we prepare graduates for successful careers.</p>
+            </div>
+            <div class="mt-12 grid md:grid-cols-3 gap-8 text-center">
+                <div class="bg-card p-6 rounded-lg shadow-lg card-hover">
+                    <i data-lucide="award" class="w-12 h-12 text-primary mx-auto mb-4"></i>
+                    <h3 class="font-bold text-xl mb-2">Industry-Aligned Curriculum</h3>
+                    <p class="text-muted-foreground text-sm">Programs designed with industry experts to ensure practical skills and high employability.</p>
+                </div>
+                <div class="bg-card p-6 rounded-lg shadow-lg card-hover">
+                    <i data-lucide="briefcase" class="w-12 h-12 text-primary mx-auto mb-4"></i>
+                    <h3 class="font-bold text-xl mb-2">Strong Placement Support</h3>
+                    <p class="text-muted-foreground text-sm">A 96% placement rate with dedicated cells that connect students to top MNCs.</p>
+                </div>
+                <div class="bg-card p-6 rounded-lg shadow-lg card-hover">
+                    <i data-lucide="users" class="w-12 h-12 text-primary mx-auto mb-4"></i>
+                    <h3 class="font-bold text-xl mb-2">Vibrant Campus Life</h3>
+                    <p class="text-muted-foreground text-sm">Modern facilities, events, and student clubs that foster personal and professional growth.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="courses" class="my-16 scroll-animate">
+             <div class="text-center">
+                <h2 class="text-4xl font-bold mb-4">Explore Our Programs</h2>
+                <p class="text-muted-foreground max-w-3xl mx-auto mb-10">We offer a wide range of degree and diploma programs across multiple disciplines, each designed to equip you with the skills for a successful future. Below is a sample of our popular courses and their fee structures.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-card rounded-lg shadow-lg p-6 flex flex-col card-hover">
+                    <h3 class="font-bold text-2xl mb-2">B.Tech (CSE/AI)</h3>
+                    <p class="text-muted-foreground text-sm mb-4 flex-grow">4 years | Total Fee: ₹4,28,200</p>
+                    <a href="https://axiscolleges.org/courses/" target="_blank" class="font-semibold text-primary text-sm hover:underline">Learn More →</a>
+                </div>
+                <div class="bg-card rounded-lg shadow-lg p-6 flex flex-col card-hover">
+                    <h3 class="font-bold text-2xl mb-2">B.Arch</h3>
+                    <p class="text-muted-foreground text-sm mb-4 flex-grow">5 years | Total Fee: ₹4,25,000</p>
+                    <a href="https://axiscolleges.org/courses/" target="_blank" class="font-semibold text-primary text-sm hover:underline">Learn More →</a>
+                </div>
+                <div class="bg-card rounded-lg shadow-lg p-6 flex flex-col card-hover">
+                    <h3 class="font-bold text-2xl mb-2">MBA</h3>
+                    <p class="text-muted-foreground text-sm mb-4 flex-grow">2 years | Total Fee: ₹1,60,000</p>
+                    <a href="https://axiscolleges.org/courses/" target="_blank" class="font-semibold text-primary text-sm hover:underline">Learn More →</a>
+                </div>
+                <div class="bg-card rounded-lg shadow-lg p-6 flex flex-col card-hover">
+                    <h3 class="font-bold text-2xl mb-2">B.Pharm</h3>
+                    <p class="text-muted-foreground text-sm mb-4 flex-grow">4 years | Total Fee: ₹4,80,000</p>
+                    <a href="https://axiscolleges.org/courses/" target="_blank" class="font-semibold text-primary text-sm hover:underline">Learn More →</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="placements" class="my-16 scroll-animate">
+             <div class="text-center">
+                <h2 class="text-4xl font-bold mb-4">Proven Placement Success</h2>
+                <p class="text-muted-foreground max-w-3xl mx-auto mb-10">Our strong industry connections and dedicated placement cell have resulted in over 8,000 students placed in top national and multinational companies. Our numbers speak for themselves.</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-6 text-center mb-12">
+                <div class="bg-card p-4 md:p-6 rounded-lg shadow-lg card-hover">
+                    <h3 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary">₹<span data-count="51">0</span>LPA</h3>
+                    <p class="text-muted-foreground text-sm mt-1">Highest Package</p>
+                </div>
+                <div class="bg-card p-4 md:p-6 rounded-lg shadow-lg card-hover">
+                    <h3 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary"><span data-count="96">0</span>%</h3>
+                    <p class="text-muted-foreground text-sm mt-1">Placement Rate (2023)</p>
+                </div>
+                 <div class="bg-card p-4 md:p-6 rounded-lg shadow-lg card-hover">
+                    <h3 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary">₹<span data-count="4.6">0</span>LPA</h3>
+                    <p class="text-muted-foreground text-sm mt-1">Average Package</p>
+                </div>
+                <div class="bg-card p-4 md:p-6 rounded-lg shadow-lg card-hover">
+                    <h3 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary"><span data-count="200">0</span>+</h3>
+                    <p class="text-muted-foreground text-sm mt-1">Companies Recruited</p>
+                </div>
+            </div>
+            <div>
+                 <h3 class="text-3xl font-bold text-center mb-6">Our Top Recruiters</h3>
+                 <div class="flex flex-wrap justify-center items-center gap-x-8 gap-y-4">
+                     <span class="font-semibold text-muted-foreground">Google</span>
+                     <span class="font-semibold text-muted-foreground">TCS</span>
+                     <span class="font-semibold text-muted-foreground">Wipro</span>
+                     <span class="font-semibold text-muted-foreground">Infosys</span>
+                     <span class="font-semibold text-muted-foreground">Capgemini</span>
+                     <span class="font-semibold text-muted-foreground">Amazon</span>
+                     <span class="font-semibold text-muted-foreground">Flipkart</span>
+                     <span class="font-semibold text-muted-foreground">HCL</span>
+                 </div>
+            </div>
+        </section>
+
+        <section id="admissions" class="my-16 bg-card rounded-lg shadow-lg p-8 md:p-12 text-center scroll-animate card-hover">
+            <h2 class="text-4xl font-bold mb-2">Apply for Admission 2025–26</h2>
+            <p class="text-muted-foreground max-w-3xl mx-auto mb-8">Join a leading institution in Kanpur. We accept online applications for all our degree and diploma programs. Explore scholarship options and start your journey with us today.</p>
+             <a href="https://axiscolleges.org/admission" target="_blank" class="inline-block px-8 py-3 bg-primary text-primary-foreground font-semibold rounded-lg shadow-md ripple-btn btn-gradient">Apply Online Now</a>
+        </section>
+
+        <section class="my-16 scroll-animate">
+            <h2 class="text-4xl font-bold text-center mb-10">What Our Students Say</h2>
+            <div class="relative overflow-hidden">
+                <div id="testimonialCarousel" class="carousel-container">
+                    <div class="carousel-item p-4">
+                        <div class="bg-card p-6 rounded-lg shadow-lg h-full">
+                            <p class="text-muted-foreground mb-4">"Best college in Kanpur—excellent faculty and infrastructure that truly supports learning."</p>
+                            <p class="font-semibold text-card-foreground">- Akash R.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item p-4">
+                        <div class="bg-card p-6 rounded-lg shadow-lg h-full">
+                            <p class="text-muted-foreground mb-4">"The placement support is robust, with strong industry connections that helped me start my career."</p>
+                            <p class="font-semibold text-card-foreground">- Shivansh D.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item p-4">
+                        <div class="bg-card p-6 rounded-lg shadow-lg h-full">
+                            <p class="text-muted-foreground mb-4">"A campus that encourages creativity and learning beyond books. I'm grateful for the experience."</p>
+                            <p class="font-semibold text-card-foreground">- Arpita P.</p>
+                        </div>
+                    </div>
+                     <div class="carousel-item p-4">
+                        <div class="bg-card p-6 rounded-lg shadow-lg h-full">
+                            <p class="text-muted-foreground mb-4">"The faculty is incredibly supportive and the curriculum is perfectly aligned with industry needs."</p>
+                            <p class="font-semibold text-card-foreground">- Student Review</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer id="contact" class="bg-card border-t border-custom mt-16">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                 <div>
+                     <img src="https://i.ibb.co/3s4jQ3s/axislogo-1.png" alt="Axis Colleges Logo" class="h-12 mb-4">
+                     <p class="text-muted-foreground text-sm">Hathipur, Rooma, Kanpur, UP</p>
+                      <img src="https://i.ibb.co/L8fRCMf/Approvals-Affiliations-Logo.png" alt="Logos of AICTE, AKTU, COA, PCI" class="max-w-xs mt-4" loading="lazy">
+                 </div>
+                 <div>
+                     <h4 class="font-semibold text-lg mb-4">Quick Links</h4>
+                     <ul class="space-y-2 text-sm">
+                         <li><a href="#about" class="text-muted-foreground hover:text-primary">About Us</a></li>
+                         <li><a href="#courses" class="text-muted-foreground hover:text-primary">Courses</a></li>
+                         <li><a href="#placements" class="text-muted-foreground hover:text-primary">Placements</a></li>
+                         <li><a href="https://axiscolleges.org/admission" target="_blank" class="text-muted-foreground hover:text-primary">Admissions</a></li>
+                     </ul>
+                 </div>
+                 <div>
+                      <h4 class="font-semibold text-lg mb-4">Get in Touch</h4>
+                     <ul class="space-y-2 text-sm text-muted-foreground">
+                        <li>Admission: +91-7607888887</li>
+                        <li>General: +91-7897993333</li>
+                        <li>Email: info@axiscolleges.org</li>
+                     </ul>
+                 </div>
+                 <div>
+                    <h4 class="font-semibold text-lg mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/axiscolleges" target="_blank" aria-label="Facebook"><i data-lucide="facebook" class="text-muted-foreground hover:text-primary"></i></a>
+                        <a href="https://x.com/axiscolleges" target="_blank" aria-label="X (Twitter)"><i data-lucide="twitter" class="text-muted-foreground hover:text-primary"></i></a>
+                        <a href="https://www.youtube.com/channel/UC-7QjYI3sYf8tS25fL5BawQ" target="_blank" aria-label="YouTube"><i data-lucide="youtube" class="text-muted-foreground hover:text-primary"></i></a>
+                        <a href="https://www.instagram.com/axiscolleges" target="_blank" aria-label="Instagram"><i data-lucide="instagram" class="text-muted-foreground hover:text-primary"></i></a>
+                     </div>
+                 </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-custom text-center text-sm text-muted-foreground">
+                <p>© 2025 Axis Colleges. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const setupComponent = (selector, initFunction) => {
+                if (document.querySelector(selector)) {
+                    initFunction();
+                }
+            };
+
+            const initDarkMode = () => {
+                const toggle = document.getElementById('darkModeToggle');
+                const htmlEl = document.documentElement;
+                if (localStorage.getItem('theme') === 'dark') htmlEl.classList.add('dark');
+                toggle.addEventListener('click', () => {
+                    htmlEl.classList.toggle('dark');
+                    localStorage.setItem('theme', htmlEl.classList.contains('dark') ? 'dark' : 'light');
+                });
+            };
+
+            const initMobileMenu = () => {
+                const btn = document.getElementById('mobileMenuBtn');
+                const menu = document.getElementById('mobileMenu');
+                btn.addEventListener('click', () => {
+                    const isHidden = menu.classList.toggle('hidden');
+                    btn.setAttribute('aria-expanded', !isHidden);
+                });
+                menu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+                    menu.classList.add('hidden');
+                    btn.setAttribute('aria-expanded', 'false');
+                }));
+            };
+
+            const initRippleEffect = () => {
+                document.querySelectorAll('.ripple-btn').forEach(button => {
+                    button.addEventListener('click', function (e) {
+                        const ripple = document.createElement('span');
+                        ripple.classList.add('ripple');
+                        this.appendChild(ripple);
+                        const size = Math.max(this.clientWidth, this.clientHeight);
+                        ripple.style.width = ripple.style.height = size + 'px';
+                        ripple.style.left = e.clientX - this.getBoundingClientRect().left - size / 2 + 'px';
+                        ripple.style.top = e.clientY - this.getBoundingClientRect().top - size / 2 + 'px';
+                        ripple.addEventListener('animationend', () => ripple.remove());
+                    });
+                });
+            };
+
+            const initScrollAnimations = () => {
+                const animateCount = el => {
+                    if (el.dataset.animated) return;
+                    el.dataset.animated = true;
+                    const target = +el.dataset.count;
+                    let current = 0;
+                    const increment = target / 100;
+                    const interval = setInterval(() => {
+                        current += increment;
+                        if (current >= target) {
+                            clearInterval(interval);
+                            el.textContent = target.toString().includes('.') ? target.toFixed(1) : target;
+                        } else {
+                           let value = current.toString().includes('.') ? current.toFixed(1) : Math.ceil(current);
+                           el.textContent = value;
+                        }
+                    }, 20);
+                };
+                const observer = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('in-view');
+                            entry.target.querySelectorAll('[data-count]').forEach(animateCount);
+                        }
+                    });
+                }, { threshold: 0.1 });
+                document.querySelectorAll('.scroll-animate').forEach(el => observer.observe(el));
+            };
+
+            const initHeroCarousel = () => {
+                const slides = document.querySelectorAll('#hero-carousel .carousel-slide');
+                const textContent = document.querySelector('.hero-text-content');
+                const headlineEl = document.getElementById('hero-headline');
+                const subheadlineEl = document.getElementById('hero-subheadline');
+                const dotsContainer = document.getElementById('hero-dots');
+                let currentSlide = 0;
+                let slideInterval;
+
+                const slideTexts = [
+                    { headline: "Axis Colleges — Where Ambition Meets Opportunity", subheadline: "A multidisciplinary group of colleges in Kanpur delivering industry-ready education in engineering, design, pharmacy, management and the arts." },
+                    { headline: "Experience a Vibrant & Supportive Campus Life", subheadline: "Engage in student clubs, cultural fests, and sports to foster personal growth and build lifelong connections." },
+                    { headline: "Innovate with State-of-the-Art Facilities", subheadline: "Access modern labs, advanced studios, and a comprehensive digital library to turn your ideas into reality." }
+                ];
+
+                slides.forEach((_, i) => {
+                    const dot = document.createElement('button');
+                    dot.setAttribute('aria-label', `Go to slide ${i + 1}`);
+                    dot.className = 'w-2 h-2 rounded-full bg-white/50 transition-colors';
+                    if (i === 0) dot.classList.add('!bg-white');
+                    dot.addEventListener('click', () => goToSlide(i));
+                    dotsContainer.appendChild(dot);
+                });
+                const dots = dotsContainer.querySelectorAll('button');
+
+                const goToSlide = (index) => {
+                    slides[currentSlide].classList.remove('active');
+                    dots[currentSlide].classList.remove('!bg-white');
+                    currentSlide = (index + slides.length) % slides.length;
+                    slides[currentSlide].classList.add('active');
+                    dots[currentSlide].classList.add('!bg-white');
+                    
+                    headlineEl.textContent = slideTexts[currentSlide].headline;
+                    subheadlineEl.textContent = slideTexts[currentSlide].subheadline;
+
+                    textContent.classList.remove('hero-text-animate');
+                    void textContent.offsetWidth;
+                    textContent.classList.add('hero-text-animate');
+                    resetInterval();
+                };
+                
+                const resetInterval = () => {
+                    clearInterval(slideInterval);
+                    slideInterval = setInterval(() => goToSlide(currentSlide + 1), 5000);
+                };
+
+                document.getElementById('hero-next').addEventListener('click', () => goToSlide(currentSlide + 1));
+                document.getElementById('hero-prev').addEventListener('click', () => goToSlide(currentSlide - 1));
+                
+                textContent.classList.add('hero-text-animate');
+                resetInterval();
+            };
+
+            const initTestimonialCarousel = () => {
+                const carousel = document.getElementById('testimonialCarousel');
+                const items = carousel.querySelectorAll('.carousel-item');
+                if(items.length <= 1) return;
+
+                const itemsToShow = window.innerWidth < 1024 ? 1 : 3;
+                if (items.length <= itemsToShow) return;
+
+                let clones = [];
+                for (let i = 0; i < itemsToShow; i++) {
+                    let clone = items[i].cloneNode(true);
+                    carousel.appendChild(clone);
+                    clones.push(clone);
+                }
+
+                let currentItem = 0;
+                setInterval(() => {
+                    currentItem++;
+                    carousel.style.transition = 'transform 0.5s ease-in-out';
+                    carousel.style.transform = `translateX(-${currentItem * (100 / items.length)}%)`;
+
+                    if (currentItem >= items.length) {
+                        setTimeout(() => {
+                            carousel.style.transition = 'none';
+                            currentItem = 0;
+                            carousel.style.transform = `translateX(0)`;
+                        }, 500);
+                    }
+                }, 3000);
+            };
+
+            setupComponent('body', initDarkMode);
+            setupComponent('#mobileMenuBtn', initMobileMenu);
+            setupComponent('.ripple-btn', initRippleEffect);
+            setupComponent('.scroll-animate', initScrollAnimations);
+            setupComponent('#hero-carousel', initHeroCarousel);
+            setupComponent('#testimonialCarousel', initTestimonialCarousel);
+        });
+    </script>
+</body>
+</html>
+
